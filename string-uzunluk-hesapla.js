@@ -6,7 +6,9 @@ module.exports = function(RED) {
 
             msg.payload = Number(msg.payload.length);
             if(msg.payload == 0)
-		this.status( {fill:"yellow", shape:"dot", text:"String icerigi bos!"} );
+		this.status( {fill:"red", shape:"dot", text:"String icerigi bos!"} );
+           else
+               this.status( {} );
 
             node.send(msg);
         });
