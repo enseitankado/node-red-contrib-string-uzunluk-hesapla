@@ -3,8 +3,11 @@ module.exports = function(RED) {
         RED.nodes.createNode(this, config);
         var node = this;
         node.on('input', function(msg) {
-	    this.status({fill:"red",shape:"ring",text:"disconnected"});
+
             msg.payload = Number(msg.payload.length);
+            if(msg.payload == 0)
+		this.status( {fill:"yellow", shape:"dot", text:"String icerigi bos!"} );
+
             node.send(msg);
         });
     }
