@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('string-uzunluk-hesapla',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "hash.png",
+        label: function() {
+            return this.name||"string-uzunluk-hesapla";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="string-uzunluk-hesapla">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="string-uzunluk-hesapla">
+    <p>bString'in uzunlugunu bulan basit bir node. Node, mesaj payload'ından okuduğu string'in uzunluğunu hesaplayarak payload değeri olarak gönderir.</p>
+</script>
+

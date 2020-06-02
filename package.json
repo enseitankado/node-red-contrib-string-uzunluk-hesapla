@@ -1,0 +1,21 @@
+{
+  "name": "node-red-contrib-string-uzunluk-hesapla",
+  "version": "1.0.0",
+  "description": "Bu node string'in uzunlugunu hesaplar.",
+  "main": "string-uzunluk-hesapla.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "string",
+    "uzunluk",
+    "length"
+  ],
+  "author": "Ozgur Koca",
+  "license": "ISC",
+  "node-red" : {
+        "nodes": {
+            "string-uzunluk-bul": "string-uzunluk-hesapla.js"
+        }
+    }
+}
