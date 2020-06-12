@@ -10,7 +10,6 @@ module.exports = function(RED) {
 				node.status( {fill:"red", shape:"dot", text:"String icerigi bos!"} );
            else
                node.status( {} );
-
             node.send(msg);
         });
     }
